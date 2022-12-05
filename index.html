@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/5f52c268b2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<header class="main-header">
+    <div class="container container--flex">
+
+        <div class="main-header__container">
+            <h1 class="main-header__title">Monti Ink</h1>
+            <span class="icon-menu" id="btn-menu"><i class="fas fa-bars"></i></span>
+            <nav class="main-nav" id="main-nav">
+                <ul class="menu">
+                    <li class="menu__item"><a href="" class="menu__link">INICIO</a></li>
+                    <li class="menu__item"><a href="" class="menu__link">CITAS</a></li>
+                    <li class="menu__item"><a href="" class="menu__link">TIENDA</a></li>
+                    <li class="menu__item"><a href="" class="menu__link">CONTACTO</a></li>
+                    <li class="menu__item"><a href="" class="menu__link">SOBRE NOSOTROS</a></li>
+                    <li class="menu__item"><a href="iniciar.html" class="ini menu__link">INICIAR SESION</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main-header__container">
+            <span class="main-header__txt">Necesitas ayuda?</span>
+            <p class="main-header__txt"><i class="fas fa-phone"></i> llamanos 948918446</p>
+        </div>
+        <div class="main-header__container">
+            <input type="search" class="main-header__input" placeholder="Buscar productos"><i class="fas fa-search"></i>
+            
+            <ul>
+                <li class="submenu ">
+                  
+                    <i id="img-carrito" class="fas fa-shopping-cart main-header__btn"></i>
+                    
+                    <div id="carrito">
+
+                        <table id="lista-carrito">
+                            <thead>
+                                <tr>
+                                    <th>Imagen</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th>Cantidad</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                        <div id="centrarVaciar">
+                            <a href="#" id="vaciar-carrito">Vaciar Carrito</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+<div class="container-slider">
+    <div class="slider" id="slider">
+        <div class="slider__section">
+            <img src="imagen/salon.jpg" alt="" class="slider__img">
+            <div class="slider__content">
+                <h2 class="slider__title">NUESTRO ESTUDIO</h2>
+                <p class="slider__txt">VISITA NUESTRO ESTUDIO EN SAN MIGUEL <b>MONTI INK</b></p>
+                <a href="" class="btn-shop">COMPRA O AGENDA AHORA</a>
+            </div>
+        </div>
+        <div class="slider__section">
+            <img src="imagen/tinta2.JPG" alt="" class="slider__img">
+            <div class="slider__content">
+                <h2 class="slider__title">SUPPLY</h2>
+                <p class="slider__txt">Descuentos en tintas,mobiliario y utensilios hasta del 20%</p>
+                <a href="" class="btn-shop">COMPRA O AGENDA AHORA</a>
+            </div>
+        </div>
+        <div class="slider__section">
+            <img src="imagen/tatuando.jpg" alt="" class="slider__img">
+            <div class="slider__content">
+                <h2 class="slider__title">NUESTRO EQUIPO DE TATUADORES</h2>
+                <p class="slider__txt">AGENDA TU CITA CON TU ARTISTA FAVORITO EN <B>MONTI INK</B></p>
+                <a href="" class="btn-shop">COMPRA O AGENDA AHORA</a>
+            </div>
+        </div>
+        <div class="slider__section">
+            <img src="imagen/maquina0.jpg" alt="" class="slider__img">
+            <div class="slider__content">
+                <h2 class="slider__title">MAQUINAS PROFESIONALES</h2>
+                <p class="slider__txt">TENEMOS AMPLIA VARIEDAD DE MAQUINAS NACIONALES E IMPORTADAS</p>
+                <a href="" class="btn-shop">COMPRA O AGENDA AHORA</a>
+            </div>
+        </div>
+    </div>
+    <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
+    <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
+</div>
+
+
+<main class="main" id="lista-cursos">
+    <div class="container " id="lista-cursos">
+        <h2 class="main-title">NUEVOS ESTILOS PARA TI</h2>
+        <section class="container-products" id="lista-cursos">
+            <div class="product">
+                <img src="imagen/tinta1.JPG" alt="" class="product__img">
+                <div class="product__description">
+                    <h3 class="product__title">TINTAS SOLID INK</h3>
+                    <span class="product__price">$10.000</span>
+                    <i class="product__icon fas fa-cart-plus agregar-carrito" data-id="1"></i>
+                </div>
+
+            </div>
+            <div class="product">
+                <img src="imagen/tinta0.JPG" alt="" class="product__img">
+                <div class="product__description">
+                    <h3 class="product__title">TINTAS MONTI</h3>
+                    <span class="product__price">$9.000</span>
+                    <i class="product__icon fas fa-cart-plus agregar-carrito" data-id="2"></i>
+                </div>
+            </div>
+            <div class="product">
+                <img src="imagen/tinta3.JPG" alt="" class="product__img">
+                <div class="product__description">
+                    <h3 class="product__title">TINTAS BONDI</h3>
+                    <span class="product__price">$12.000</span>
+                    <i class="product__icon fas fa-cart-plus agregar-carrito" data-id="3"></i>
+                </div>
+            </div>
+            <div class="product">
+                <img src="imagen/tinta4.JPG" alt="" class="product__img">
+                <div class="product__description">
+                    <h3 class="product__title">TINTAS DINAMIC</h3>
+                    <span class="product__price">$7.000</span>
+                    <i class="product__icon fas fa-cart-plus agregar-carrito" data-id="4"></i>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="container-products" id="lista-cursos">
+            <div class="product">
+                <img src="imagen/maquina1.jpg" alt="" class="product__img">
+                <div class="product__description">
+                    <h3 class="product__title">MAQUINA GAG</h3>
+                    <span class="product__price">$40.000</span>
+                    <i class="product__icon fas fa-cart-plus agregar-carrito" data-id="5"></i>
+                </div>
+
+            </div>
+            <div class="product">
+                <img src="imagen/maquina2.jpg" alt="" class="product__img">
+                <div class="product__description">
+                    <h3 class="product__title">MAQUINA TATTOS</h3>
+                    <span class="product__price">$50.000</span>
+                    <i class="product__icon fas fa-cart-plus agregar-carrito" data-id="6"></i>
+                </div>
+            </div>
+            <div class="product">
+                <img src="imagen/maquina3.jpg" alt="" class="product__img">
+                <div class="product__description">
+                    <h3 class="product__title">MAQUINA BIZARRE</h3>
+                    <span class="product__price">$50.000</span>
+                    <i class="product__icon fas fa-cart-plus agregar-carrito" data-id="7"></i>
+                </div>
+            </div>
+            <div class="product">
+                <img src="imagen/maquina4.jpg" alt="" class="product__img">
+                <div class="product__description">
+                    <h3 class="product__title">MAQUINA HAWINK WE</h3>
+                    <span class="product__price">$7.000</span>
+                    <i class="product__icon fas fa-cart-plus agregar-carrito" data-id="8"></i>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="container-products" id="lista-cursos">
+            <div class="product">
+                <img src="imagen/aguja1.jpg" alt="" class="product__img">
+                <div class="product__description">
+                    <h3 class="product__title">CAJA DE AGUJAS KWADRON</h3>
+                    <span class="product__price">$15.000</span>
+                    <i class="product__icon fas fa-cart-plus agregar-carrito" data-id="9"></i>
+                </div>
+
+            </div>
+            <div class="product">
+                <img src="imagen/aguja2.jpg" alt="" class="product__img">
+                <div class="product__description">
+                    <h3 class="product__title">AGUJAS COMPLETAS POR UNIDAD</h3>
+                    <span class="product__price">$2.000</span>
+                    <i class="product__icon fas fa-cart-plus agregar-carrito" data-id="10"></i>
+                </div>
+            </div>
+            <div class="product">
+                <img src="imagen/aguja3.jpg" alt="" class="product__img">
+                <div class="product__description">
+                    <h3 class="product__title">CAJA DE AGUJAS VS</h3>
+                    <span class="product__price">$18.000</span>
+                    <i class="product__icon fas fa-cart-plus agregar-carrito" data-id="11"></i>
+                </div>
+            </div>
+            <div class="product">
+                <img src="imagen/aguja4.jpg" alt="" class="product__img">
+                <div class="product__description">
+                    <h3 class="product__title">CAJA DE AGUJAS WORMHOLE</h3>
+                    <span class="product__price">$20.000</span>
+                    <i class="product__icon fas fa-cart-plus agregar-carrito" data-id="12"></i>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="container-products" id="lista-cursos">
+            <div class="product">
+                <img src="imagen/estencil.jpg" alt="" class="product__img">
+                <div class="product__description">
+                    <h3 class="product__title">COMBO DE LIQUIDO Y PAPEL PARA ESTENCIL</h3>
+                    <span class="product__price">$10.000</span>
+                    <i class="product__icon fas fa-cart-plus agregar-carrito" data-id="13"></i>
+                </div>
+
+            </div>
+            <div class="product">
+                <img src="imagen/frascos.jpg" alt="" class="product__img">
+                <div class="product__description">
+                    <h3 class="product__title">ENVASES PARA TINTA 100un</h3>
+                    <span class="product__price">$4.000</span>
+                    <i class="product__icon fas fa-cart-plus agregar-carrito" data-id="14"></i>
+                </div>
+            </div>
+            <div class="product">
+                <img src="imagen/fuentepoder.jpg" alt="" class="product__img">
+                <div class="product__description">
+                    <h3 class="product__title">FUENTES DE PODER POWER SUPLY</h3>
+                    <span class="product__price">$25.000</span>
+                    <i class="product__icon fas fa-cart-plus agregar-carrito" data-id="15"></i>
+                </div>
+            </div>
+            <div class="product">
+                <img src="imagen/set maquina.jpg" alt="" class="product__img">
+                <div class="product__description">
+                    <h3 class="product__title">SET TATTO: maquina, fuente de poder, tintas y agujas</h3>
+                    <span class="product__price">$60.000</span>
+                    <i class="product__icon fas fa-cart-plus agregar-carrito" data-id="16"></i>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="container-products" id="lista-cursos">
+            <div class="product">
+                <img src="imagen/silla.jpg" alt="" class="product__img">
+                <div class="product__description">
+                    <h3 class="product__title">SILLA-CAMILLA MULTI USO</h3>
+                    <span class="product__price">$150.000</span>
+                    <i class="product__icon fas fa-cart-plus agregar-carrito" data-id="17"></i>
+                </div>
+
+            </div>
+            <div class="product">
+                <img src="imagen/banco.jpg" alt="" class="product__img">
+                <div class="product__description">
+                    <h3 class="product__title">BANQUILLO DE TRABAJO</h3>
+                    <span class="product__price">$30.000</span>
+                    <i class="product__icon fas fa-cart-plus agregar-carrito" data-id="18"></i>
+                </div>
+            </div>
+            <div class="product">
+                <img src="imagen/mesa.JPG" alt="" class="product__img">
+                <div class="product__description">
+                    <h3 class="product__title">MESA PARA ESTACION DE TRABAJO</h3>
+                    <span class="product__price">$60.000</span>
+                    <i class="product__icon fas fa-cart-plus agregar-carrito" data-id="19"></i>
+                </div>
+            </div>
+            <div class="product">
+                <img src="imagen/maleta.jpg" alt="" class="product__img">
+                <div class="product__description">
+                    <h3 class="product__title">MALETA PARA EQUIPAMIENTO </h3>
+                    <span class="product__price">$40.000</span>
+                    <i class="product__icon fas fa-cart-plus agregar-carrito" data-id="20"></i>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="container__testimonials">
+            <h2 class="section__title">Testimonios</h2>
+            <h3 class="testimonial__title">Anamaria</h3>
+            <p class="testimonial__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, perferendis,
+                animi! Numquam quasi similique, fuga sint. Nulla veritatis quia nemo, magni, necessitatibus impedit
+                inventore, provident culpa repellat esse a quo.</p>
+        </section>
+
+        <div class="container-editor">
+            <div class="editor__item">
+                <img src="imagen/salon.jpg" alt="" class="editor__img">
+                <p class="editor__circle">AGENDA TU CITA CON NOSOTROS </p>
+            </div>
+            <div class="editor__item">
+                <img src="imagen/artistas.jpg" alt="" class="editor__img">
+                <p class="editor__circle">CONOCE A NUESTROS ARTISTAS</p>
+            </div>
+        </div>
+        <section class="container-tips">
+            <div class="tip">
+                <i class="fa-solid fa-suitcase-rolling"></i>
+                <h2 class="tip__title">UTENCILIOS</h2>
+                <p class="tip__txt">LO MEJOR EN UTENCILIOS PARA TU TIENDA O TU USO PERSONAL</p>
+                <a href="#" class="btn-shop">COMPRA AHORA</a>
+            </div>
+            <div class="tip">
+                <i class="fa-solid fa-shop"></i>
+                <h2 class="tip__title">MOBILIARIO PARA TU TIENDA</h2>
+                <p class="tip__txt">TENEMOS TODO EN MOBILIARIO PARA TU TIENDA Y LO QUE NECESITAS PARA COMENZAR EN EL
+                    MUNDO DEL TATTO</p>
+                <a href="#" class="btn-shop">COMPRA AHORA</a>
+            </div>
+            <div class="tip">
+                <i class="fa-solid fa-droplet"></i>
+                <h2 class="tip__title">TINTAS</h2>
+                <p class="tip__txt">VARIEDAD EN TINTAS, DE COLOR, NEGRO Y TAMBIEN TENEMOS TINTAS
+                    FLUORECENTES</p>
+                <a href="#" class="btn-shop">COMPRA AHORA</a>
+            </div>
+        </section>
+    </div>
+</main>
+<footer class="main-footer">
+    <div class="footer__section">
+        <h2 class="footer__title">Acerca De Nosotros</h2>
+        <p class="footer__txt">Curabitur non nulla sit amet nislinit tempus convallis quis ac lectus. lac inia eget
+            consectetur sed, convallis at tellus. Nulla porttitor accumsana tincidunt.</p>
+    </div>
+    <div class="footer__section">
+        <h2 class="footer__title">Encuentranos en</h2>
+        <p class="footer__txt">Santiago de chile, Comuna de San Miguel</p>
+        <h2 class="footer__title">Contacto</h2>
+        <p class="footer__txt">Phone : 948918446</p>
+        <p class="footer__txt">Email : vero.omonti@gmail.com</p>
+    </div>
+    <div class="footer__section">
+        <h2 class="footer__title">Links</h2>
+        <a href="" class="footer__link">Inicio</a>
+        <a href="" class="footer__link">Agenda</a>
+        <a href="" class="footer__link">Tienda</a>
+        <a href="" class="footer__link">error</a>
+        <a href="" class="footer__link">Contactanos</a>
+    </div>
+    <div class="footer__section">
+        <h2 class="footer__title">Inicia sesion Y OBTEN OFERTAS</h2>
+        <p class="footer__txt">Suscribe tu correo y recibe todas las promociones instantaneamente</p>
+        <input type="email" class="footer__input" placeholder="Enter your email">
+    </div>
+    <p class="copy">© 2022 Goggles. All Rights Reserved | Design by Gian franco camilli</p>
+
+    <script src="js/funciones.js"></script>
+</footer>
+
+</html>
